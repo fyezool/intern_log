@@ -2,10 +2,10 @@
 
 ### This project aim to 
 
-- Automate the logbook using pdf, reportlab, pypdf2
-- Honing Python skill for Nton SMart Inventory project
-- Utilize free time during Restricted Movement Order 18-31 March
-- Inspired by classmate post on automation, hence, tried myseld for the sake of curiosity
+1. Automate the logbook using pdf, reportlab, pypdf2
+2. Honing Python skill for Nton SMart Inventory project
+3. Utilize free time during Restricted Movement Order 18-31 March
+4. Inspired by classmate post on automation, hence, tried myseld for the sake of curiosity
 
 ## How does it works
 
@@ -23,6 +23,7 @@
 
 
 ## References
-[main code](https://stackoverflow.com/questions/6819336/add-text-to-existing-pdf-document-in-python)
-[Web scraping 101](https://pdfminer-docs.readthedocs.io/programming.html#performing-layout-analysis)(https://towardsdatascience.com/web-scraping-101-in-python-35f8653b1c97)
-[Text wrapping](https://stackoverflow.com/questions/41553666/reportlab-wrap-with-drawstring)
+1. *[main code](https://stackoverflow.com/questions/6819336/add-text-to-existing-pdf-document-in-python)
+2. [Web scraping 101](https://pdfminer-docs.readthedocs.io/programming.html#performing-layout-analysis)
+3. [Another pdf scraping](https://towardsdatascience.com/web-scraping-101-in-python-35f8653b1c97)
+4. **[Text wrapping](https://stackoverflow.com/questions/41553666/reportlab-wrap-with-drawstring)
