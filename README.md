@@ -21,3 +21,8 @@
 4. Profit
 5. Best of luck on your internship guys.
 
+
+## References
+[main code](https://stackoverflow.com/questions/6819336/add-text-to-existing-pdf-document-in-python)
+[Web scraping 101](https://pdfminer-docs.readthedocs.io/programming.html#performing-layout-analysis)(https://towardsdatascience.com/web-scraping-101-in-python-35f8653b1c97)
+[Text wrapping](https://stackoverflow.com/questions/41553666/reportlab-wrap-with-drawstring)
