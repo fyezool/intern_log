@@ -11,7 +11,7 @@
 
 1. Pdf file **__daily__** and **__weekly__** scraped using **__miner_daily__** and **__miner_weekly__** to get the position of textfield instead of blind guess
 2. Modify the coordinate a bit just to make sure it is accurate
-3. **__daily.p__** then will copy all **__daily.pdf__** content then insert all input data from user then create new file according to the user
+3. **__daily_log.py__** then will copy all **__daily.pdf__** content then insert all input data from user then create new file according to the user
 
 
 ## Text Wrapping fix
