@@ -1,11 +1,11 @@
 ## Daily & Weekly Log for UCTS internship
 
-### This project aim to 
+### This project are basically :- 
 
 1. Automate the logbook using pdf, reportlab, pypdf2
-2. Honing Python skill for Nton SMart Inventory project
+2. Honing Python skill for Nton Smart Inventory project
 3. Utilize free time during Restricted Movement Order 18-31 March
-4. Inspired by classmate post on automation, hence, tried myseld for the sake of curiosity
+4. Inspired by classmate post on automation, hence, tried myself for the sake of curiosity
 
 ## How does it works
 
@@ -17,7 +17,7 @@
 ## Text Wrapping fix
 1. use if to set text max length
 2. ```wrap_description = textwrap.wrap(description, width=80, break_on_hyphens=False)``` set new var for wrapped text and store it
-3. Display stored text using ```canvas.drawString``` and list[] + new coordinate for new line of text
+3. Display stored text using ```canvas.drawString``` and ```list[]``` + new coordinate for new line of text
 4. Profit
 5. Best of luck on your internship guys.
 
