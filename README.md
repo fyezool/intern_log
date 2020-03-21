@@ -23,7 +23,7 @@
 
 
 ## References
-1. *[main code](https://stackoverflow.com/questions/6819336/add-text-to-existing-pdf-document-in-python)
+1.* [main code](https://stackoverflow.com/questions/6819336/add-text-to-existing-pdf-document-in-python)
 2. [Web scraping 101](https://pdfminer-docs.readthedocs.io/programming.html#performing-layout-analysis)
 3. [Another pdf scraping](https://towardsdatascience.com/web-scraping-101-in-python-35f8653b1c97)
-4. **[Text wrapping](https://stackoverflow.com/questions/41553666/reportlab-wrap-with-drawstring)
+4. *[Text wrapping](https://stackoverflow.com/questions/41553666/reportlab-wrap-with-drawstring)
