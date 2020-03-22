@@ -59,15 +59,15 @@ can.save()
 packet.seek(0)
 new_pdf = PdfFileReader(packet)
 # read your existing PDF
-existing_pdf = PdfFileReader(open("daily.pdf", "rb"))
+existing_pdf = PdfFileReader(open("main_docs/daily.pdf", "rb"))
 output = PdfFileWriter()
 # add the "watermark" (which is the new pdf) on the existing page
 page = existing_pdf.getPage(0)
 page.mergePage(new_pdf.getPage(0))
 output.addPage(page)
 # finally, write "output" to a real file
-outputStream = open("out.pdf","wb")
+outputStream = open("logs/out.pdf","wb")
 fname = input("Set your file name here leh :")
-os.rename("out.pdf", "{}.pdf".format(fname))
+os.rename("logs/out.pdf", "logs/{}.pdf".format(fname))
 output.write(outputStream)
 outputStream.close()
