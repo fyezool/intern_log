@@ -7,6 +7,14 @@
 3. Utilize free time during Restricted Movement Order 18-31 March
 4. Inspired by classmate post on automation, hence, tried myself for the sake of curiosity
 
+
+
+## Use it for the sake of automation(fancy word for lazy)
+1. Run daily_log.py
+2. Enter **day**, **date**, **activities**, **work produced**, **comments on the activities** and give **name** for your file.
+3. Produced logs will be on **__logs__** folder. 
+4. Print that thing.
+
 ## How does it works
 
 1. Pdf file **__daily__** and **__weekly__** scraped using **__miner_daily__** and **__miner_weekly__** to get the position of textfield instead of blind guess
