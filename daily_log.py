@@ -21,7 +21,9 @@ can.drawString(380.64999, 630.2060642678908, date)
 
 description = input("Describe what did you do: ")
 if len(description) > 80:
-    wrap_description = textwrap.wrap(description, width=80, break_on_hyphens=False)
+    wrap_description = textwrap.wrap(description,
+                                     width=80,
+                                     break_on_hyphens=False)
     can.drawString(73.25, 580.7060642678908, wrap_description[0])
     can.drawString(73.25, 560.7060642678908, wrap_description[1])
     can.drawString(73.25, 540.7060642678908, wrap_description[2])
@@ -32,7 +34,9 @@ else:
 
 activities = input("What is the activities / work produced: ")
 if len(activities) > 80:
-    wrap_activities = textwrap.wrap(activities, width=80, break_on_hyphens=False)
+    wrap_activities = textwrap.wrap(activities,
+                                    width=80,
+                                    break_on_hyphens=False)
     can.drawString(73.25, 450.45606426789084, wrap_activities[0])
     can.drawString(73.25, 430.45606426789084, wrap_activities[1])
     can.drawString(73.25, 410.45606426789084, wrap_activities[2])
@@ -41,15 +45,16 @@ if len(activities) > 80:
 else:
     can.drawString(73.25, 450.45606426789084, activities)
 
-
 ##user input conclusions
 conclusion = input("give the conclusions: ")
 
 ##set max length of conclusions
 if len(conclusion) > 80:
     ## declare new variable to wrap where the width of it is 80 and the wrapper wont break hypens
-    wrap_conclusion = textwrap.wrap(conclusion, width=80, break_on_hyphens=False)
-    
+    wrap_conclusion = textwrap.wrap(conclusion,
+                                    width=80,
+                                    break_on_hyphens=False)
+
     ## put the wrapped text in next line using coordinate[x,y] and list[0..1......]
     can.drawString(73.25, 280.20606426789084, wrap_conclusion[0])
     can.drawString(73.25, 260.20606426789084, wrap_conclusion[1])
@@ -59,7 +64,6 @@ if len(conclusion) > 80:
 else:
     ## if the text is not exceed 80, draw string normally in default coordinate
     can.drawString(73.25, 280.20606426789084, conclusion)
-
 
 can.save()
 
@@ -74,7 +78,7 @@ page = existing_pdf.getPage(0)
 page.mergePage(new_pdf.getPage(0))
 output.addPage(page)
 # finally, write "output" to a real file
-outputStream = open("logs/out.pdf","wb")
+outputStream = open("logs/out.pdf", "wb")
 
 ## set file name
 fname = input("Set your file name here leh :")
