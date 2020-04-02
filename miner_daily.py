@@ -1,13 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+This program "mines" the text content of the PDF file 
+to get the x & y coordinates for each content.
+
+You can easily use this program for your own modification
+inside the main program.
+"""
+
+
 from pdfminer.layout import LAParams, LTTextBox
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.converter import PDFPageAggregator
 
-fp = open('daily.pdf', 'rb')
+fp = open('main_docs/daily.pdf', 'rb')
 rsrcmgr = PDFResourceManager()
 laparams = LAParams()
 device = PDFPageAggregator(rsrcmgr, laparams=laparams)
