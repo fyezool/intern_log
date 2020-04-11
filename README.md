@@ -40,6 +40,5 @@
 
 ### TODO
 - Fetch file from specific folder then use cron to execute python script
-- Input error control
 - Modularise the program
 - You tell?

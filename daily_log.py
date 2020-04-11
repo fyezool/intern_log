@@ -29,12 +29,13 @@ can.drawString(385.64999, 630.2060642678908, date)
 def write(content, y):
     if len(content) > 80:
         y_diff = 0
-        # If the text is longer than 80 characters, wrap the texts
+        # Wrap the texts within 80 characters per line
         wrap_content = textwrap.wrap(content,
                                      width=80,
                                      break_on_hyphens=False)
 
-        for i in wrap_content:
+        for i in wrap_content[:5]:
+            # However, only first 5 lines of texts are allowed
             # Print each line with 20 pixels difference in y-coord
             can.drawString(x, y-y_diff, i)
             y_diff += 20
@@ -68,13 +69,10 @@ page.mergePage(new_pdf.getPage(0))
 output.addPage(page)
 
 
-# finally, write "output" to a real file
-outputStream = open("output/daily/out.pdf", "wb")
-
 # set file name
 fname = input("Set your file name here leh: ")
 
-# rename the default file saved using fname variable from user input
-os.rename("output/daily/out.pdf", "output/daily/{}.pdf".format(fname))
+# finally, write "output" to a real file
+outputStream = open("output/daily/{}.pdf".format(fname), "wb")
 output.write(outputStream)
 outputStream.close()

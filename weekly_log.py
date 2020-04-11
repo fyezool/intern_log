@@ -29,12 +29,13 @@ can.drawString(374.58, 674.804, date)
 def write(content, x, y):
     if len(content) > 80:
         y_diff = 0
-        # If the text is longer than 80 characters, wrap the texts
+        # Wrap the texts within 80 characters per line
         wrap_content = textwrap.wrap(content,
                                      width=80,
                                      break_on_hyphens=False)
 
-        for i in wrap_content:
+        for i in wrap_content[:5]:
+            # However, only first 5 lines of texts are allowed
             # Print each line with 20 pixels difference in y-coord
             can.drawString(x, y-y_diff, i)
             y_diff += 20
