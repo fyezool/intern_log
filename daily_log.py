@@ -15,13 +15,14 @@ from reportlab.pdfgen import canvas
 packet = io.BytesIO()
 # create a new PDF with Reportlab
 can = canvas.Canvas(packet, pagesize=A4)
+can.setFont("Helvetica", 12)
 x = 73.25
 
 day = input("Enter day: ")
-can.drawString(100, 630.2060642678908, day)
+can.drawString(105, 630.2060642678908, day)
 
 date = input("Enter Date: ")
-can.drawString(380.64999, 630.2060642678908, date)
+can.drawString(385.64999, 630.2060642678908, date)
 
 
 # Function call for writing content
@@ -68,12 +69,12 @@ output.addPage(page)
 
 
 # finally, write "output" to a real file
-outputStream = open("logs/out.pdf", "wb")
+outputStream = open("output/daily/out.pdf", "wb")
 
 # set file name
-fname = input("Set your file name here leh:")
+fname = input("Set your file name here leh: ")
 
 # rename the default file saved using fname variable from user input
-os.rename("logs/out.pdf", "logs/{}.pdf".format(fname))
+os.rename("output/daily/out.pdf", "output/daily/{}.pdf".format(fname))
 output.write(outputStream)
 outputStream.close()
